@@ -1,13 +1,14 @@
+import { FriendCard, Status, Name, Avatar } from './FriendListItem.styled';
 import PropTypes from 'prop-types';
 
 
 export const FriendListItem = ({ avatar, name, isOnline }) => {
     return (
-        <li class="item">
-            <span class="status">{isOnline ? 'green' : 'red'}</span>
-            <img class="avatar" src={avatar} alt="User avatar" width="48" />
-            <p class="name">{name}</p>
-        </li>
+        <FriendCard>
+            <Status color={isOnline ? "green" : "red"}></Status>
+            <Avatar  src={avatar} alt="User avatar" width="48" />
+            <Name>{name}</Name>
+        </FriendCard>
     )
 };
 

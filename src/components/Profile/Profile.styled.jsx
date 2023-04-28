@@ -1,64 +1,64 @@
-.profile {
+import styled from 'styled-components';
+
+export const ProfileWrap = styled.div`
     width: 210px;
     margin: 20px auto;
     padding: 5px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .25);
     border:1px solid #ced3db;
     border-radius: 10px;
-}
+`
 
-.description {}
-
-.avatar {
+export const Avatar = styled.img`
     width: 100%;
     display: block;
     margin: 20px auto;
-}
+`
 
-.name {
+export const UserName = styled.p`
     margin-bottom: 12px;
     text-align: center;
     font-size: 24px;
     font-weight: 500;
     color: #232323;
-}
+`
 
-.tag {
+export const Tag = styled.p`
     margin-bottom: 12px;
     text-align: center;
     font-size: 16px;
     font-weight: 400;
     color: #696c70;
-}
+`
 
-.location {
+export const Location = styled.p`
     margin-bottom: 20px;
     text-align: center;
     font-size: 16px;
     font-weight: 400;
     color: #696c70;
-}
+`
 
-.stats {
+export const Stats = styled.ul`
     display: flex;
     gap: 15px;
     justify-content: center;
     background-color: #d3d6db;
     padding: 12px;
     border-radius: 5px;
-}
+`
 
-.label {
+export const Label = styled.span`
     margin-bottom: 8px;
     text-align: center;
     font-size: 14px;
     font-weight: 400;
     color: #696c70;
-}
+`
 
-.quantity {
+export const Quantity = styled.span`
     text-align: center;
     font-size: 14px;
     font-weight: 500;
     color: #232323;
-}
+`
