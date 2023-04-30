@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 export const Statistics = ({ title, stats }) => {
     return (
         <StatisticsWrap>
-            <Title>{title}</Title>
+            {title && <Title>{title}</Title>}
             <StatList>
                 {
                     stats.map(stat => (
